@@ -1,0 +1,17 @@
+Source: cegui
+Priority: optional
+Maintainer: Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), cmake, libogre-1.8-dev, libois-dev, libdevil-dev, libfreeimage-dev, libfreetype6-dev, libjpeg-dev, liblua5.1-dev, libpcre3-dev, libpng-dev, libtiff-dev, libxerces-c3.1, libz-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: http://cegui.org.uk
+Vcs-Git: git://bitbucket.org/cegui/cegui.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/cegui.git;a=summary
+
+Package: cegui
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: cegui-mk2
+Description: Crazy Eddie's GUI
+ CEGUI is a free library providing windowing and widgets for graphics APIs and engines where such functionality is not natively available or is severely lacking. The library is written in C++, is object oriented, and is primarily targeted at games developers who should be spending their time creating great games, not building GUI sub-systems 

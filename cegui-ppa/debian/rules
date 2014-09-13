@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+override_dh_auto_configure:
+	cmake . -DCMAKE_INSTALL_PREFIX=/usr -DCEGUI_BUILD_IMAGECODEC_STB=false -DCEGUI_BUILD_IMAGECODEC_TGA=false
+override_dh_auto_build:
+	make
+override_dh_auto_install:
+	make install DESTDIR=$(CURDIR)/debian/cegui
