@@ -1,0 +1,24 @@
+Source: node-three
+Section: web
+Priority: extra
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+Build-Depends:
+ debhelper (>= 8)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.5
+Homepage: http://threejs.org/
+Vcs-Git: git://anonscm.debian.org/pkg-javascript/node-three.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/node-three.git
+XS-Testsuite: autopkgtest
+
+Package: node-three
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: JavaScript 3D library
+ Node module for Three.js
+ .
+ Node.js is an event-based server-side JavaScript engine.

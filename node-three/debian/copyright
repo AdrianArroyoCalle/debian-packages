@@ -1,0 +1,14 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: three
+Upstream-Contact: https://github.com/mrdoob/three.js/issues
+Source: http://threejs.org/
+
+Files: *
+Copyright: 2014 three.js contributors
+License: The MIT License
+
+Files: debian/*
+Copyright: 2014 Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+License: The MIT License
+
+License: The MIT License

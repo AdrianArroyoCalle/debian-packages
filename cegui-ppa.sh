@@ -5,4 +5,4 @@ cd cegui-ppa
 debian/rules get-orig-source
 debuild -S -sa -kadrian.arroyocalle@gmail.com
 cd ..
-dput ppa:adrian-arroyocalle/cegui *.changes
+dput ppa:adrian-arroyocalle/cegui cegui*.changes

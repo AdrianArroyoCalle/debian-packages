@@ -1,0 +1,14 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mespeak
+Upstream-Contact: https://github.com/mikolalysenko/mespeak/issues
+Source: https://github.com/mikolalysenko/mespeak
+
+Files: *
+Copyright: 2014 Norbert Landsteiner
+License: GPL
+
+Files: debian/*
+Copyright: 2014 Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+License: GPL
+
+License: FIX_ME please specify a license description
