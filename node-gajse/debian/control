@@ -1,0 +1,26 @@
+Source: node-gajse
+Section: web
+Priority: extra
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+Build-Depends:
+ debhelper (>= 8)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 3.9.5
+Homepage: http://adrianarroyocalle.github.io/gajse
+Vcs-Git: git://anonscm.debian.org/pkg-javascript/node-gajse.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-javascript/node-gajse.git
+XS-Testsuite: autopkgtest
+
+Package: node-gajse
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-mespeak (>= 1.4.4-c)
+ , node-three (>= 0.68.0)
+Description: GAJSE - Graphic Adventure JavaScript Engine
+ GAJSE
+ .
+ Node.js is an event-based server-side JavaScript engine.

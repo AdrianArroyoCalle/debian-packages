@@ -1,0 +1,14 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gajse
+Upstream-Contact: https://github.com/AdrianArroyoCalle/gajse/issues
+Source: http://adrianarroyocalle.github.io/gajse
+
+Files: *
+Copyright: 2014 Adrián Arroyo Calle
+License: Affero GPL or Commercial
+
+Files: debian/*
+Copyright: 2014 Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+License: Affero GPL or Commercial
+
+License: FIX_ME please specify a license description
