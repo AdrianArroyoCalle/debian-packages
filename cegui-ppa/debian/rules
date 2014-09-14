@@ -12,3 +12,9 @@ override_dh_auto_build:
 	make
 override_dh_auto_install:
 	make install DESTDIR=$(CURDIR)/debian/cegui
+get-orig-source:
+	wget "http://prdownloads.sourceforge.net/crayzedsgui/cegui-0.8.4.tar.bz2" -O ../cegui_0.8.4.orig.tar.bz2
+install-orig-source: get-orig-source
+	tar xjvf ../cegui_0.8.4.orig.tar.bz2
+	cp -r cegui-0.8.4/* .
+	rm cegui-0.8.4
