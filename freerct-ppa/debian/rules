@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+override_dh_auto_configure:
+	cmake . -DCMAKE_INSTALL_PREFIX=/usr
+override_dh_auto_build:
+	make
+override_dh_auto_install:
+	make install DESTDIR=$(CURDIR)/debian/freerct
+get-orig-source:
+	wget "https://github.com/LordAro/FreeRCT/archive/master.tar.gz" -O ../freerct_0.0.0.927.orig.tar.gz
+install-orig-source: get-orig-source
+	tar xzvf ../freerct_0.0.0.927.orig.tar.gz
+	cp -r freerct-master/* .
+	rm freerct-master

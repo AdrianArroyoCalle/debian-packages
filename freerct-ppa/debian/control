@@ -1,0 +1,14 @@
+Source: freerct
+Priority: optional
+Maintainer: Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+Build-Depends: debhelper (>= 7), libstdc++6(>= 4.1), libsdl1.2-dev, libsdl-ttf2.0-dev, libpng12-dev, cmake
+Standards-Version: 3.9.5
+Section: games
+Homepage: http://freerct.org
+
+Package: freerct
+Section: games
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: FreeRCT
+ FreeRCT aims to be a free and open source game which captures the look, feel and gameplay of the popular games RollerCoaster Tycoon 1 and 2.
