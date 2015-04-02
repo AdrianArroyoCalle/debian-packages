@@ -1,7 +1,7 @@
 Source: cegui
 Priority: optional
 Maintainer: Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), cmake, libogre-1.8-dev, libois-dev, libdevil-dev, libfreeimage-dev, libfreetype6-dev, libjpeg-dev, liblua5.1-dev, libpcre3-dev, libpng-dev, libtiff-dev, libxerces-c3.1, libz-dev
+Build-Depends: debhelper (>= 8.0.0), cmake, libogre-1.8-dev, libois-dev, libdevil-dev, libxml2-dev, libfreeimage-dev, libfreetype6-dev, libjpeg-dev, liblua5.1-dev, libpcre3-dev, libpng-dev, libtiff-dev, libxerces-c3.1, libz-dev
 Standards-Version: 3.9.5
 Section: libs
 Homepage: http://cegui.org.uk
