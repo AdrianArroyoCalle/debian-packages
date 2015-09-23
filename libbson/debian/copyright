@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libbson
+Upstream-Contact: https://github.com/mongodb/libbson
+Source: http://github.com/mongodb/libbson
+
+Files: *
+Copyright: 2015 MongoDB
+License: Apache-2.0

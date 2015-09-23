@@ -1,0 +1,16 @@
+Source: libbson
+Priority: optional
+Maintainer: Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), git-core, automake, autoconf, libtool, gcc
+Standards-Version: 3.9.5
+Section: libs
+Homepage: http://github.com/mongodb/libbson
+Vcs-Git: git://github.com/mongodb/libbson
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/cegui.git;a=summary
+
+Package: libbson
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libbson
+ libbson is a library providing useful routines related to building, parsing, and iterating BSON documents. It is a useful base for those wanting to write high-performance C extensions to higher level languages such as python, ruby, or perl.

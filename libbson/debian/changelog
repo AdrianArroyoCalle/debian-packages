@@ -1,0 +1,6 @@
+libbson (1.1.11-2) trusty; urgency=low
+
+  * Initial release (Closes: #nnnn)
+
+ -- Adrián Arroyo Calle <adrian.arroyocalle@gmail.com>  Thu, 24 Sep 2015 18:58:48 +0200
+

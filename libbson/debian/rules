@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- --enable-static
+
+override_dh_auto_build:
+	dh_auto_build
+override_dh_auto_install:
+	dh_auto_install
+
+#override_dh_auto_test:
+
+get-orig-source:
+	wget "https://github.com/mongodb/libbson/releases/download/1.1.11/libbson-1.1.11.tar.gz" -O ../libbson_1.1.11.orig.tar.gz
+install-orig-source: get-orig-source
+	tar xzvf ../libbson_1.1.11.orig.tar.gz
+	cp -r libbson-1.1.11/* .
+	rm -rf libbson-1.1.11
